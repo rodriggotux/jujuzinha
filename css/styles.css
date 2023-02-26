@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu {
+    background: #1e2336;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+
+.menu header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.menu > header > .logo > a {
+    font-family: 'Righteous', sans-serif;
+    color: #1CB698;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+.menu  header  ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.menu header nav ul li a {
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.menu header nav ul li a:hover {
+    color: #1CB698;
+}
+
+.nav-responsiva {
+    background-color: #1CB698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* depois mudar a image, fiz uma gambearra
+ * ess parte, ta mexendo o "contnaire" onde tem a img
+ *  tem que coloca uma foto tratada do photoshop
+ *
+ */
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+    url(../assets/img/criativa.jpeg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .container-banner {
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    /*margin-bottom: 9px; eu que coloquei, nao tem, qualquer coisa, eu tiro*/
+}
+
+.inicio .container-banner img {
+    margin-top: 40px;
+    border: 6px solid #1CB698; /* aqui tem que ser 10px mas, tem que arrumar a image, depois eu mexo*/
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .container-banner h1 {
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous', sans-serif;
+}
+
+.inicio .container-banner h2 {
+    font-size: 15px;
+    font-weight: normal;
+
+}
+
+.inicio .container-banner .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+
+
+}
+
+.redes{
+    cursor: pointer;
+}
+
+.inicio .container-banner .redes a:hover {
+    background-color: #1CB698;
+}
+
+.sobremim {
+    background-color: #1e2326;
+    color: #fff;
+    padding-bottom: 50px 20px;
+}
+
+.sobremim .container-section {
+    max-width:1100px;
+    margin: auto;
+}
+
+.sobremim h2 {
+    font-size: 42px;
+    font-family: 'Righteous', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremim .container-section p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremim .container-section p span {
+    color: #1CB698;
+    font-weight: bold;
+}
+
+.sobremim .fila {
+    display: flex;
+}
+
+.sobremim .fila .col {
+    width: 50%;
+}
+
+.sobremim .fila .col h3 {
+    font-size: 28px;
+    font-family: "Righteous", sans-serif;
+    margin-bottom: 25px;
+}
+
+.sobremim .fila .col ul {
+    list-style: none;
+}
+
+.sobremim .fila .col ul li {
+    margin: 12px 0;
+}
+
+.sobremim .fila .col ul li strong {
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+
+.sobremim .fila .col ul li span {
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremim .fila .col .interesse {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremim .fila .col .interesse .interess {
+   width: 100px;
+   height: 100px;
+   background-color: #252a2e;
+   border-radius: 10px;
+   margin: 0 15px 15px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   transition: .3s;
+}
+
+.sobremim .fila .col .interesse .interess:hover {
+    background-color: #1CB698;
+}
+
+.sobremim .fila .col .interesse .interess i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* aqui ta dando um bung, mas o big ta vindo
+ * de outra parte, tenho que rever o codigo de novo
+ * na parte de cim
+ * */
+.sobremim button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremim button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1CB698;
+}
